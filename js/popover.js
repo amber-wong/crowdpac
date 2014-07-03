@@ -1,4 +1,3 @@
-<!-- popover -->
 			$(function() {
 	<!-- candidate1 popover script -->
 				$('#p1').popover({
@@ -115,6 +114,7 @@
 					}
 				});
 			});
+
 
 <!-- scroller bar -->
 			$(function() {

@@ -1,0 +1,1021 @@
+/* ---------- Variables ---------- */
+@democrat: #36328e;
+@republican: #b41430;
+@greenParty: #4bb64b;
+
+@purpleScroller: #4B0082;
+
+@redRating: #801e3a;
+@blueRating: #421e80;
+@purpleRating: #571e80;
+
+@acta-display-font: 700 15px acta-display;
+@rooney-web-font: 300 15px rooney-web;
+@proxima-nova-font-lighter: 300 15px proxima-nova;
+@proxima-nova-font-bolder: 600 15px proxima-nova;
+
+@candidate-content-divider: 1px solid #696969;
+
+@popover-background-color: #f1f1f1;
+
+
+/* ---------- Main ---------- */
+body {
+	font: @proxima-nova-font-lighter;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background: #f3f6f4;
+}
+
+#footer{
+	color: #143444;
+	line-height: 1.5em;
+	font-size: 12px;
+	font-weight: bold;
+	overflow: hidden;
+	width: 760px;
+	padding: 2px 30px;
+	background: #cccccc;
+	border-top: 0px solid #ffffff;
+	border-bottom: 0px solid #ffffff;
+	text-align: center;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	color: #000000;
+	font-weight: normal;
+}
+
+h2 {}
+
+h3 {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid #000000;
+	width: 27.5%;
+}
+h3[data-type~="Democrat"] {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid @democrat;
+	width: 25%
+}
+h3[data-type~="Republican"] {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid @republican;
+	width: 25%
+}
+h3[data-type~="Green"] {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid @greenParty;
+	width: 25%
+}
+
+p {
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;	
+}
+
+.cleaner {
+	clear: both;
+	width: 100%;
+	height: 0px;
+	font-size: 1px;	
+}
+
+.cleanerWithHeight {
+	clear: both;
+	width: 100%;
+	height: 15px;
+	font-size: 1px;	
+}
+
+body #container {
+	width: 820px;
+	margin: 10px auto;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	background: #ffffff url() repeat-x;
+	border-radius: 6px;
+	
+	#containerSection {
+		width: 760px;
+		padding: 30px 30px 0 30px;
+		background: #ffffff;
+		text-align:center;
+		border-radius: 6px;
+		
+		.header {
+			border: 0px solid #000000;
+			font-size: 14px;
+			text-align: left;
+			width: 100%;
+			display:inline-block; /* display: block; */
+			*display:inline;
+			vertical-align:top;
+
+			.floatLeft {
+				float: left;
+				
+				.title {
+					font: @proxima-nova-font-lighter;
+					text-transform: uppercase;
+					letter-spacing:0.5px;
+					font-weight: bold;
+				}
+			}
+
+			.floatRight {
+				float: right;
+				
+				.more {
+					a {
+						&:link, &:visited {
+							color: #ff4814;
+							text-decoration: none;
+							font: @rooney-web-font;
+							font-size: 14px;
+						}
+						
+						&:active, &:hover{
+							color: #ff4814;
+							text-decoration: underline;
+							font: @rooney-web-font;
+							font-size: 14px;
+						}
+					}
+				} 
+			}
+		}
+		
+		.candidateMain {
+			z-index: 1;
+			border: 0px solid #000000;
+			font-size: 14px;
+			text-align: left;
+			width: 23%;
+			margin-left:6px;
+			margin-right:6px;
+			display:inline-block; /* display: block; */
+			*display:inline;
+			vertical-align:top;
+			
+			img {
+				border: 0px solid #000000;
+				margin-bottom: 0px;
+				width: 100%; /*220*/
+			}
+			
+			p {
+				font: @rooney-web-font;
+				color: #404040;
+				padding-bottom: 10px;
+			}
+			
+			#p1, #p2, #p3, #p4 {
+				width: inherit;
+				margin: inherit;
+			}
+			
+			h4 {
+				margin: 0 0 0px 0;
+				padding: 1px 0 25px 0;
+				font: @acta-display-font;
+				color: #000000;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				
+				.floatLeft {
+					float: left;
+				}
+
+				.floatRight {
+					float: right;
+					
+					.partyColor {
+						color: #ffffff;
+						font-family: proxima-nova;
+						font-weight: 600;
+						text-transform: uppercase;
+						padding: 2px 5px 2px 5px;
+						background-color: #000000;
+					}
+					.partyColor[data-type~="Democrat"] {
+						color: #ffffff;
+						font-family: proxima-nova;
+						font-size: 14px;
+						font-weight: 600;
+						text-transform: uppercase;
+						padding: 2px 5px 2px 5px;
+						background-color: @democrat;
+					}
+					.partyColor[data-type~="Republican"] {
+						color: #ffffff;
+						font-family: proxima-nova;
+						font-weight: 600;
+						text-transform: uppercase;
+						padding: 2px 5px 2px 5px;
+						background-color: @republican;
+					}
+					.partyColor[data-type~="Green"] {
+						color: #ffffff;
+						font-family: proxima-nova;
+						font-weight: 600;
+						text-transform: uppercase;
+						padding: 2px 5px 2px 5px;
+						background-color: @greenParty;
+					}
+				}
+			}
+
+			
+			table {
+				font: @proxima-nova-font-bolder;
+				text-transform: uppercase;
+				text-align: left;
+				width: 100%;
+				padding: 0px;
+				padding-top: 8px;
+				margin: 0px;
+				border-collapse:collapse;
+				
+				tr[data-type~="Democrat"] {
+					color: @democrat;
+					font: @proxima-nova-font-bolder;
+					text-transform: inherit;
+					text-align: inherit;
+					padding: 0px;
+					margin: 0px;
+				}
+				
+				tr[data-type~="Republican"] {
+					color: @republican;
+					font: @proxima-nova-font-bolder;
+					text-transform: inherit;
+					text-align: inherit;
+					padding: 0px;
+					margin: 0px;
+				}
+				
+				tr[data-type~="Green"] {
+					color: @greenParty;
+					font: @proxima-nova-font-bolder;
+					text-transform: inherit;
+					text-align: inherit;
+					padding: 0px;
+					margin: 0px;
+				}
+				
+				th {
+					color: inherit;
+					font: @proxima-nova-font-bolder;
+					text-transform: inherit;
+					text-align: inherit;
+					padding: 0px;
+					margin: 0px;
+				}
+				
+				td {
+					font: @proxima-nova-font-bolder;
+					letter-spacing:0.25px;
+					text-align: left;
+					width: auto;
+					padding: 0px;
+					margin: 0px;
+				}
+			}
+		
+			h2 {
+				text-align: left;
+				padding-bottom: 0px;
+				margin: 0px;
+				border-bottom: @candidate-content-divider;
+			}
+		}
+		
+		h1 {
+			text-align: left;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			border-bottom: 3px solid #000000;
+		}
+	}
+}
+
+.candidate1Title, .candidate2Title, .candidate3Title, .candidate4Title {
+	padding: 5px 4px 0px 0px;
+	vertical-align: middle;
+
+	table {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		border-collapse:collapse;
+		
+		tr {
+			td {
+				vertical-align: middle;
+				
+				table {
+					padding: 0px;
+					margin: 0px;
+					border: 0px;
+					border-collapse:collapse;
+					
+					tr {
+						td {
+							font-size: 25px;
+							font-family: acta-display;
+							text-transform: uppercase;
+							margin: 0px;
+							padding-right: 5px;
+							background-color: #f1f1f1;
+							
+							img {
+								height: 12px;
+								vertical-align: middle;
+								margin: 0px;
+								padding: 0px;
+							}
+							span {
+								height: 14px;
+								vertical-align: center;
+							}
+							
+							.partyColor {
+								font: @proxima-nova-font-bolder;
+								font-size: 15px;
+								text-transform: uppercase;
+								margin: 0;
+								padding: 2px 5px 2px 5px;
+								color: #ffffff;
+								border-radius: 2px;
+							}
+							.partyColor[data-type~="Democrat"]  {
+								font: @proxima-nova-font-bolder;
+								font-size: 15px;
+								text-transform: uppercase;
+								margin: 0px;
+								padding: 2px 5px 2px 5px;
+								color: #ffffff;
+								border-radius: 2px;
+								background-color: @democrat;
+							}
+							.partyColor[data-type~="Republican"]  {
+								font: @proxima-nova-font-bolder;
+								font-size: 15px;
+								text-transform: uppercase;
+								margin: 0;
+								padding: 2px 5px 2px 5px;
+								color: #ffffff;
+								border-radius: 2px;
+								background-color: @republican;
+							}
+							.partyColor[data-type~="Green"]  {
+								font: @proxima-nova-font-bolder;
+								font-size: 15px;
+								text-transform: uppercase;
+								margin: 0;
+								padding: 2px 5px 2px 5px;
+								color: #ffffff;
+								border-radius: 2px;
+								background-color: @greenParty;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#p1Content, #p2Content, #p3Content, #p4Content {
+	z-index: 1001;
+	background-color: #f1f1f1;
+	min-width: 312px;
+	width: 100%;
+	
+	table {
+		letter-spacing:0.5px;
+		text-align: left;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		border: 0px;
+		border-collapse:collapse;
+		background-color: #f1f1f1;
+		
+		td {
+			letter-spacing:0.5px;
+			text-align: left;
+			width: auto;
+			padding: 0;
+			margin: 0;
+			border: 0px;
+			background-color: inherit;
+		}
+		
+		tr {
+			font-family: inherit;
+			font-weight: inherit;
+			letter-spacing:inherit;
+			text-transform: inherit;
+			text-align: inherit;
+			padding: inherit;
+			margin: inherit;
+			background-color: inherit;
+		}
+	}
+}
+
+.rating {
+	font: @rooney-web-font;
+	color: #ffffff;
+	background-color: #ffffff;
+	padding: 10px 17px;
+	border-radius:50%;
+}
+.rating[data-type*="red"] {
+	font: @rooney-web-font;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: @redRating;
+	padding: 10px 17px;
+	border-radius:50%;
+}
+.rating[data-type*="blue"] {
+	font: @rooney-web-font;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: @blueRating;
+	padding: 10px 13px;
+	border-radius:50%;
+}
+.rating[data-type*="purple"] {
+	font: @rooney-web-font;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: @purpleRating;
+	padding: 10px 17px;
+	border-radius:50%;
+}
+
+.description {
+	font: @rooney-web-font;
+	text-transform: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0px;
+	color: #837878;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+/*!
+ * Bootstrap v2.0.1
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Modified by Amber Wong
+ */
+
+ /* ---------- Popover ---------- */
+.tooltip {
+	position: absolute;
+	z-index: 1020;
+	display: block;
+	visibility: visible;
+	padding: 5px;
+	font-size: 11px;
+	opacity: 0;
+	filter: alpha(opacity=100);
+	
+	.in {
+		opacity: 0.8;
+		filter: alpha(opacity=100);
+	}
+	
+	.top {
+		margin-top: -2px;
+		
+		.tooltip-arrow {
+			bottom: 0;
+			left: 50%;
+			margin-left: -5px;
+			border-left: 5px solid #ffffff;
+			border-right: 5px solid #ffffff;
+			border-top: 5px solid transparent;
+		}
+	}
+	
+	.bottom {
+		margin-top: 2px;
+		
+		.tooltip-arrow {
+			top: 0;
+			left: 50%;
+			margin-left: -5px;
+			border-left: 5px solid #ffffff;
+			border-right: 5px solid #ffffff;
+			border-bottom: 5px solid transparent;
+		}
+	}
+	
+	.right {
+		margin-left: 2px;
+		
+		.tooltip-arrow {
+			top: 50%;
+			left: 0;
+			margin-top: -5px;
+			border-top: 5px solid #ffffff;
+			border-bottom: 5px solid #ffffff;
+			border-right: 5px solid transparent;
+		}
+	}
+	
+	.left {
+		margin-left: -2px;
+		
+		.tooltip-arrow {
+			top: 50%;
+			right: 0;
+			margin-top: -5px;
+			border-top: 5px solid #ffffff;
+			border-bottom: 5px solid #ffffff;
+			border-left: 5px solid transparent;
+		}
+	}
+}
+
+.tooltip-inner {
+	max-width: 200px;
+	padding: 3px 8px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	background-color: #000000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1010;
+	display: none;
+	padding: 0px;
+	margin-top: -27px;
+	background-color: @popover-background-color;
+	border: 1px solid #bebebe;
+	box-shadow: 0px 0px 15px #dcdcdc;
+}
+
+.popover.right {
+	margin-left: 7px;
+	margin-top: -53px;
+	
+	.arrow {
+		top: 50%;
+		left: 0;
+		margin-top: -5px;
+		margin-left: -9px;
+		border-top: 9px solid transparent;
+		border-bottom: 9px solid transparent;
+		border-right: 9px solid #000000;
+	}
+}
+.popover.left {
+	margin-left: -9px;
+	margin-top: -53px;
+	
+	.arrow {
+		top: 50%;
+		right: 0;
+		margin-top: -5px;
+		margin-right: -9px;
+		border-top: 9px solid transparent;
+		border-bottom: 9px solid transparent;
+		border-left: 9px solid #000000;
+	}
+}
+.popover .arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	color: #ffffff;
+}
+
+.popover-inner {
+	width: 422px;
+	height: 312px;
+	overflow: hidden;
+	background: @popover-background-color;
+}
+
+.popover-title {
+	padding: 0px 10px;
+	border: 0px;
+	width: auto;
+}	
+
+.popover-content {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background-color: @popover-background-color;
+	
+	p, ul, ol {
+		margin-bottom: 0;
+	}
+}
+
+
+/* ---------- Navigation tabs ---------- */
+
+.nav {
+	width: 100%;
+}
+
+.active a{
+	&:active, &:link {
+		color: #ffffff;
+		text-decoration: none;
+		font: @proxima-nova-font-bolder;
+	}
+}
+.nav-tabs[data-type~="Democrat"]>.active a {
+	&:active, &:link {
+		color: @democrat;
+		text-decoration: none;
+		font: @proxima-nova-font-bolder;
+	}
+}
+.nav-tabs[data-type~="Republican"]>.active a {
+	&:active, &:link {
+		color: @republican;
+		text-decoration: none;
+		font: @proxima-nova-font-bolder;
+	}
+}
+.nav-tabs[data-type~="Green"]>.active a {
+	&:active, &:link {
+		color: @greenParty;
+		text-decoration: none;
+		font: @proxima-nova-font-bolder;
+	}
+}
+
+#eq > span {
+    width:100%; height: 2px; float:left; margin:25px 0px;
+}
+
+.tab-content {
+	overflow:auto;
+	padding: 0px 10px;
+	
+	#candidate, #you, #america {
+		table {
+			letter-spacing: 0px;
+			text-align: left;
+			text-transform:none;
+			width: auto;
+			border-collapse:collapse;
+			
+			tr {
+				color: #000000;
+				font: @rooney-web-font;
+				font-size: 12px;
+				text-transform:none;
+				
+				#col1 {
+					font: @rooney-web-font;
+					font-size: 12px;
+					letter-spacing: 0px;
+					text-align: left;
+					text-transform:none;
+					width: 25%;
+				}
+				
+				#col2 {
+					text-align: left;
+					width: 80%;
+				}
+			}
+			
+			td {
+				text-align: left;
+				text-transform:none;
+			}
+		}
+	}
+}
+
+.tab-content[data-type~="Democrat"] {
+	#candidate, #you, #america {
+		table {
+			width: 100%;
+			border-collapse:collapse;
+			
+			tr {
+				color: @democrat;
+				font: @rooney-web-font;
+				font-size: 12px;
+				text-transform:none;
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+	}
+}
+.tab-content[data-type~="Republican"] {
+	#candidate, #you, #america {
+		table {
+			width: 100%;
+			border-collapse:collapse;
+			
+			tr {
+				color: @republican;
+				font: @rooney-web-font;
+				font-size: 12px;
+				text-transform:none;
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+	}
+}
+.tab-content[data-type~="Green"] {
+	#candidate, #you, #america {
+		table {
+			width: 100%;
+			border-collapse:collapse;
+			
+			tr {
+				color: @greenParty;
+				font: @rooney-web-font;
+				font-size: 12px;
+				text-transform:none;
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+	}
+}
+
+.nav-tabs, .nav-pills {
+	*zoom:1;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	left:0;
+	right:0;
+	
+	&:before, &:after {
+		display: table;
+		border-collapse:collapse;
+		content: "";
+		clear: both;
+		width: 100%;
+	}
+}
+.nav-tabs>li, .nav-pills>li{
+    display: inline-block;
+    overflow: auto;
+	float:left;
+	list-style: none;
+	width: 30%;
+	font: @proxima-nova-font-bolder;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	word-wrap: initial;
+	padding: 0px;
+	margin: 0px;
+}
+.nav-tabs>li{
+	padding-bottom:10px; 
+	border-bottom:2px solid #000000; 
+	content:"";
+	margin: 0px;
+}
+.nav-tabs>li>a,.nav-pills>li>a{
+	position:relative;
+	color: #000000;
+	text-decoration: none;
+	font: @proxima-nova-font-lighter;
+	
+	&:after {
+		width: 100%;
+		position: absolute; 
+		left: 0;
+		bottom: 0; 
+		border-bottom: 0px solid #000;
+		content: "";
+	}
+}
+.nav-tabs>li>a{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.nav-tabs>.active{
+	padding-bottom:9px; 
+	border-bottom:4px solid #000000;
+	color: #000000;
+	text-decoration: none;
+	font: @proxima-nova-font-lighter;
+}
+.nav-tabs[data-type~="Democrat"]>.active{
+	padding-bottom:9px; 
+	border-bottom:4px solid @democrat;
+	color: #000000;
+	text-decoration: none;
+	font: @proxima-nova-font-lighter;
+}
+.nav-tabs[data-type~="Republican"]>.active{
+	padding-bottom:9px;
+	border-bottom:4px solid @republican;
+	color: #000000;
+	text-decoration: none;
+	font: @proxima-nova-font-lighter;
+}
+.nav-tabs[data-type~="Green"]>.active{
+	padding-bottom:9px;
+	border-bottom:4px solid @greenParty;
+	color: #000000;
+	text-decoration: none;
+	font: @proxima-nova-font-lighter;
+}
+
+.nav-tabs>.active>a {
+	cursor:default;
+	
+	&:hover, &:focus {
+		cursor:default;
+	}
+}
+
+.tabbable {
+	*zoom:1;
+	
+	&:before, &:after {
+		display:table;
+		border-collapse:collapse;
+		content:"";
+	}
+	
+	&:after {
+		clear:both;
+	}
+}
+
+.tab-content>.tab-pane, .pill-content>.pill-pane {
+	-top:20px; 
+	display:none;
+}
+.tab-content>.active, .pill-content>.active {
+	display:block;
+}
+
+
+/* ---------- Slider ---------- */
+.ui-slider {
+	position: relative;
+	text-align: left;
+	
+	.ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 1.2em;
+		height: 1.2em;
+		cursor: default;
+		-ms-touch-action: none;
+		touch-action: none;
+	}
+	
+	.ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		background-position: 0 0;
+	}
+	
+	/* For IE8 - See #6727 */
+	.ui-state-disabled {
+		.ui-slider-handle, .ui-slider-range {
+			filter: inherit;
+		}
+	}
+} 
+
+.ui-slider-horizontal {
+	height: .8em;
+	
+	.ui-slider-handle {
+		top: -.3em;
+		margin-left: -.6em;
+	}
+	
+	.ui-slider-range, .ui-slider-range-min {
+		left: 0;
+	}
+	
+	.ui-slider-range-max {
+		right: 0;
+	}
+}
+
+/* Slider bar track */
+.ui-widget {
+	font-size: 1em;
+	
+	.ui-widget {
+		font-size: 1em;
+	}
+}
+
+.ui-widget-content, .ui-widget-header {
+	border: 0px;
+	background-color: #000000;
+	
+	a {
+		color: #000000;
+	}
+}
+
+/* Slider thumb */
+.ui-widget-content, .ui-widget-header, .ui-state-default, .ui-state-hover, .ui-state-focus, .ui-state-active {
+	a {
+		text-decoration: none;
+		vertical-align: center;
+		border-radius:50%;
+		
+		&:link, &:visited, &:hover {
+			text-decoration: none;
+			vertical-align: center;
+			border-radius:50%;
+		}
+	}
+	
+	.ui-state-default, .ui-state-hover, .ui-state-focus, .ui-state-active {
+		pointer-events: none;
+		margin-top:-2px;
+		padding: 0px;
+		border-radius:50%;
+		background: @purpleScroller;
+		font-weight: normal;
+		vertical-align: top;
+	}
+}
+
+/* Slider tick */
+.ui-slider-tick-mark{
+    display:inline-block;
+    width:2px;
+    background:black;
+    height:10px;
+    position:absolute;
+    top:-4px;
+}
