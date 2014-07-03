@@ -1,0 +1,552 @@
+@democrat: #36328e;
+@republican: #b41430;
+@greenparty: #4bb64b;
+@purpleRating: #4B0082;
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background: #f3f6f4;
+}
+
+#footer{
+	color: #143444; /* 000000 */
+	font-weight: bold;
+	overflow: hidden;
+	width: 760px;
+	padding: 2px 30px;
+	background: #cccccc;
+	border-top: 0px solid #ffffff;
+	border-bottom: 0px solid #ffffff; /* 3px */
+	text-align: center;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.more a:link, .more  a:visited {
+	color: #ff4814;
+	text-decoration: none;
+	font-family: rooney-web;
+	font-weight: 300;
+} 
+.more a:active, .more a:hover {
+	color: #ff4814;
+	text-decoration: underline;
+	font-family: rooney-web;
+	font-weight: 300;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	color: #000000;
+	font-weight: normal;
+}
+
+h2 {}
+
+h3 {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid #000000;
+	width: 27.5%;
+/*
+    &.blue { border-color:@blue };
+    &.red { border-color:@red };
+	&.green { border-color:@green };
+*/
+}
+
+h3[data-type~="Democrat"] {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid #36328e;
+	width: 25%
+}
+
+h3[data-type~="Republican"] {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid #b41430;
+	width: 25%
+}
+
+h3[data-type~="Green"] {
+	color: #000000;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	text-align: left;
+	border-top: 3px solid #4bb64b;
+	width: 25%
+}
+
+h4 {
+	margin: 0 0 0px 0;
+	padding: 1px 0 25px 0;
+	font-family: acta-display;
+	font-weight: 700;
+	color: #000000;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.floatLeft {
+	float: left;
+}
+.floatRight {
+	float: right;
+}
+
+
+p {
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;	
+}
+
+.cleaner {
+	clear: both;
+	width: 100%;
+	height: 0px;
+	font-size: 1px;	
+}
+
+.cleanerWithHeight {
+	clear: both;
+	width: 100%;
+	height: 15px;
+	font-size: 1px;	
+}
+
+#container {
+	width: 820px;
+	margin: 10px auto;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	background: #ffffff url() repeat-x;
+	border-radius: 6px;
+}
+
+
+
+#container #containerSection {
+	width: 760px;
+	padding: 30px 30px 0 30px;
+	background: #ffffff;
+	text-align:center;
+	border-radius: 6px;
+}
+
+#containerSection .header {
+	border: 0px solid #000000;
+	font-size: 14px;
+	text-align: left;
+	width: 100%;
+	display:inline-block; /* display: block; */
+	*display:inline;
+	vertical-align:top;
+}
+
+.header .title {
+	text-transform: uppercase;
+	letter-spacing:1px;
+	font-weight: bold;
+}
+
+h4 .partyColor {
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 4px 2px 5px;
+	background-color: #000000;
+}
+.partyColor[data-type~="Democrat"], h4 .blue {
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 4px 2px 5px;
+	background-color: #36328e;
+}
+.partyColor[data-type~="Republican"], h4 .red {
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 4px 2px 5px;
+	background-color: #b41430;
+}
+.partyColor[data-type~="Green"], h4 .green {
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 4px 2px 5px;
+	background-color: #4bb64b;
+}
+
+#containerSection .candidateMain {
+	border: 0px solid #000000;
+	font-size: 14px;
+	/* float: left; */
+	text-align: left;
+	width: 23%;
+	margin-left:6px;
+	margin-right:6px;
+	display:inline-block; /* display: block; */
+	*display:inline;
+	vertical-align:top;
+}
+#containerSection .candidateMain img{
+	border: 0px solid #000000;
+	margin-bottom: 0px;
+	width: 100%; /*220*/
+}
+#containerSection .candidateMain p{
+	font-size: 15px;
+	font-family: rooney-web;
+	font-weight: 300;
+	padding-bottom: 10px;
+}
+#containerSection h1 {
+	text-align: left;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 3px solid #000000;
+}
+#containerSection h2 {
+	text-align: left;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #696969;
+}
+#containerSection table {
+	font-family: proxima-nova;
+	font-weight: 600;
+	letter-spacing:0.5px;
+	text-transform: uppercase;
+	text-align: left;
+	width: 100%;
+	padding: 0px;
+	padding-top: 8px;
+	margin: 0px;
+}
+#containerSection table tr[data-type~="Democrat"] {
+	color: #36328e;
+	font-family: inherit;
+	font-weight: inherit;
+	letter-spacing:inherit;
+	text-transform: inherit;
+	text-align: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+#containerSection table tr[data-type~="Republican"] {
+	color: #b41430;
+	font-family: inherit;
+	font-weight: inherit;
+	letter-spacing:inherit;
+	text-transform: inherit;
+	text-align: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+#containerSection table tr[data-type~="Green"] {
+	color: #4bb64b;
+	font-family: inherit;
+	font-weight: inherit;
+	letter-spacing:inherit;
+	text-transform: inherit;
+	text-align: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+#containerSection table th {
+	color: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	letter-spacing:inherit;
+	text-transform: inherit;
+	text-align: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+#containerSection table td {
+	font-family: proxima-nova;
+	font-weight: 600;
+	letter-spacing:0.5px;
+	/*text-transform: uppercase;*/
+	text-align: left;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+#p1Content, #p2Content, #p3Content, #p4Content {
+	z-index: 9000;
+	background-color: #f1f1f1;
+}
+
+h5 {
+	font-size: 25px;
+	font-family: acta-display;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f1f1f1;
+	vertical-align: middle;
+	display: inline-block;
+	padding-bottom:5px;
+}
+h5 img{
+    height: 100%;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	margin-top:-5px;
+}
+h5 .partyColor[data-type~="Democrat"]  {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	margin-top:-5px;
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 5px 1px 5px;
+	border-radius: 2px;
+	background-color: #36328e;
+}
+h5 .partyColor[data-type~="Republican"]  {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	margin-top:-5px;
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 5px 1px 5px;
+	border-radius: 2px;
+	background-color: #b41430;
+}
+h5 .partyColor[data-type~="Green"]  {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	margin-top:-5px;
+	color: #ffffff;
+	font-family: proxima-nova;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 2px 5px 1px 5px;
+	border-radius: 2px;
+	background-color: #4bb64b;
+}
+
+#p1Content table, #p2Content table, #p3Content table, #p4Content table {
+	letter-spacing:0.5px;
+	text-align: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0px;
+	background-color: #f1f1f1;
+}
+#p1Content table td, #p2Content table td, #p3Content table td, #p4Content table td {
+	letter-spacing:0.5px;
+	text-align: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0px;
+	background-color: inherit;
+}
+#p1Content table tr, #p2Content table tr, #p3Content table tr, #p4Content table tr {
+	font-family: inherit;
+	font-weight: inherit;
+	letter-spacing:inherit;
+	text-transform: inherit;
+	text-align: inherit;
+	padding: inherit;
+	margin: inherit;
+	background-color: inherit;
+}
+
+.rating {
+	font-size: 15px;
+	font-family: rooney-web;
+	font-weight: 300;
+	color: #ffffff;
+	background-color: #ffffff;
+	padding: 10px 17px;
+	border-radius:50%;
+}
+.rating[data-type*="red"] {
+	font-size: 15px;
+	font-family: rooney-web;
+	font-weight: 300;
+	color: #ffffff;
+	background-color: #801e3a;
+	padding: 10px 17px;
+	border-radius:50%;
+}
+.rating[data-type*="blue"] {
+	font-size: 15px;
+	font-family: rooney-web;
+	font-weight: 300;
+	color: #ffffff;
+	background-color: #421e80;
+	padding: 10px 13px;
+	border-radius:50%;
+}
+.rating[data-type*="purple"] {
+	font-size: 15px;
+	font-family: rooney-web;
+	font-weight: 300;
+	color: #ffffff;
+	background-color: #571e80;
+	padding: 10px 17px;
+	border-radius:50%;
+}
+
+
+.description {
+	font-size: 15px;
+	font-family: rooney-web;
+	text-transform: none;
+	font-weight: 300;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0px;
+	color: #837878;
+}
+
+.active a:active, .active a:link {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: proxima-nova;
+	font-weight: 600;
+}
+.nav-tabs[data-type~="Democrat"]>.active a:active, .nav-tabs[data-type~="Democrat"]>.active a:link {
+	color: #36328e;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: proxima-nova;
+	font-weight: 600;
+}
+.nav-tabs[data-type~="Republican"]>.active a:active, .nav-tabs[data-type~="Republican"]>.active a:link {
+	color: #b41430;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: proxima-nova;
+	font-weight: 600;
+}
+.nav-tabs[data-type~="Green"]>.active a:active, .nav-tabs[data-type~="Green"]>.active a:link {
+	color: #4bb64b;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: proxima-nova;
+	font-weight: 600;
+}
+
+#eq > span {
+    width:100%; height: 2px; float:left; margin:25px 0px;
+}
+
+.tab-content table  {
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform:none;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content table tr {
+	color: #000000;
+	font-family: rooney-web;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform:none;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content[data-type~="Democrat"] table tr {
+	color: #36328e;
+	font-family: rooney-web;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform:none;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content[data-type~="Republican"] table tr {
+	color: #b41430;
+	font-family: rooney-web;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform:none;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content[data-type~="Green"] table tr {
+	color: #4bb64b;
+	font-family: rooney-web;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform:none;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content table tr #col1 {
+	font-family: rooney-web;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform:none;
+	width: 25%;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content table tr #col2{
+	text-align: left;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.tab-content table td {
+	text-align: left;
+	text-transform:none;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}

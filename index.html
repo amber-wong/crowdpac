@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Crowdpac Deliverable</title>
+		
+		<link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+
+		<script type="text/javascript" src="http://use.typekit.net/xmn6lvr.js"></script>
+		<script type="text/javascript">
+			try { Typekit.load(); }
+			catch(e) { }
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="./twitter-bootstrap/bootstrap-popover.js"></script>
+		<script src="./js/popover.js"></script>
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="containerSection">
+				<h1></h1>
+				<div class="header">
+					<div class="floatLeft">
+						<div class="title">Featured Candidates</div>
+					</div>
+					<div class="floatRight">
+						<span class="more"><a href="#">See more</a></span>
+					</div>
+				</div>
+				
+				<div class="cleanerWithHeight">&nbsp;</div>
+				
+<!-- candidate1 main-->
+				<div class="candidateMain" id="p1" rel="popover">
+					<img src="./images/cory-booker.png" alt="image"/>
+					<h3 data-type="Democrat"></h3>
+					<h4>
+						<div class="floatLeft">Cory</div>
+						<div class="floatRight">
+							<div class="partyColor" data-type="Democrat">D</div>
+						</div>
+						<div class="cleaner">&nbsp;</div>
+						<div class="floatLeft">Booker</div>
+					</h4>
+					<div class="cleaner">&nbsp;</div>
+					
+					<p>Candidate for NJ, US Senate</p>			
+					<h2></h2>
+					<div class="cleaner">&nbsp;</div>
+					
+					<table>
+						<tr data-type="Democrat">
+							<th>11,345</th>
+							<th>$9.8M</th>
+						</tr>
+						<tr>
+							<td>Donors</td>
+							<td>Raised</td>
+						</tr>
+					</table>
+				</div>
+<!-- candidate2 main -->
+				<div class="candidateMain" id="p2" rel="popover">
+					<img src="./images/nancy-pelosi.png" alt="image"/>
+					<h3 data-type="Democrat"></h3>
+					<h4>
+						<div class="floatLeft">Nancy</div>
+						<div class="floatRight">
+							<div class="partyColor" data-type="Democrat">D</div>
+						</div>
+						<div class="cleaner">&nbsp;</div>
+						<div class="floatLeft">Pelosi</div>
+					</h4>
+					<div class="cleaner">&nbsp;</div>
+					
+					<p>CA, 12th Congressional District</p>
+					<h2></h2>
+					<div class="cleaner">&nbsp;</div>
+					
+					<table>
+						<tr data-type="Democrat">
+							<th>82,242</th>
+							<th>$79.5M</th>
+						</tr>
+						<tr>
+							<td>Donors</td>
+							<td>Raised</td>
+						</tr>
+					</table>
+				</div>
+<!-- candidate3 main -->
+				<div class="candidateMain" id="p3" rel="popover">
+					<img src="./images/paul-ryan.png" alt="image"/>
+					<h3 data-type="Republican"></h3>
+					<h4>
+						<div class="floatLeft">Paul</div>
+						<div class="floatRight">
+							<div class="partyColor" data-type="Republican">R</div>
+						</div>
+						<div class="cleaner">&nbsp;</div>
+						<div class="floatLeft">Ryan</div>
+					</h4>
+					
+					<div class="cleaner">&nbsp;</div>
+					
+					<p>WI, 1st Congressional District</p>
+					<h2></h2>
+					
+					<div class="cleaner">&nbsp;</div>
+					
+					<table>
+						<tr data-type="Republican">
+							<th>69,401</th>
+							<th>$8.4M</th>
+						</tr>
+						<tr>
+							<td>Donors</td>
+							<td>Raised</td>
+						</tr>
+					</table>
+				</div>
+<!-- candidate4 main -->
+				<div class="candidateMain" id="p4" rel="popover">
+					<img src="./images/nancy-lynn-wade.png" alt="image"/>
+					<h3 data-type="Green Tea"></h3>
+					<h4>
+						<div class="floatLeft">Nancy</div>
+						<div class="floatRight">
+							<div class="partyColor" data-type="Green Tea">G</div>
+						</div>
+						<div class="cleaner">&nbsp;</div>
+						<div class="floatLeft">Lynn Wade</div>
+					</h4>
+					
+					<div class="cleaner">&nbsp;</div>
+					
+					<p>IL, 5th Congressional District</p>
+					<h2></h2>
+					
+					<div class="cleaner">&nbsp;</div>
+					
+					<table>
+						<tr data-type="Green Tea">
+							<th>7,943</th>
+							<th>$4.7M</th>
+						</tr>
+						<tr>
+							<td>Donors</td>
+							<td>Raised</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="cleanerWithHeight">&nbsp;</div>
+				<div class="cleanerWithHeight">&nbsp;</div>
+				
+			</div> <!-- end of containerSection -->
+			
+
+			
+<!-- candidate1 popover -->
+		<div id="p1Content" style="display: none;">
+			<ul class="nav nav-tabs" data-tabs="tabs" data-type="Democrat">
+				<li class="active" id="first"><a data-toggle="tab" href="#candidate">Candidate<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#you">Your<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#america">America's<br/>Priorities</a></li>
+			</ul>
+			<div class="tab-content" data-type="Democrat">
+				<div class="tab-pane active" id="candidate">
+					<table width="100%">
+						<tr>
+							<td id="col1">Healthcare</td>
+							<td id="col2"><div id="eq"><span>40</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>30</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Education</td>
+							<td id="col2"><div id="eq"><span>35</span></div></td>
+						</tr>
+					</table>			
+				</div>
+				<div class="tab-pane" id="you">
+					<table width="100%">
+						<tr>
+							<td id="col1">Healthcare</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Education</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>	
+				</div>
+				<div class="tab-pane" id="america">
+					<table width="100%">
+						<tr>
+							<td id="col1">Healthcare</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Education</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+<!-- candidate2 popover -->
+		<div id="p2Content" style="display: none;">
+			<ul class="nav nav-tabs" data-tabs="tabs" data-type="Democrat">
+				<li class="active" id="first"><a data-toggle="tab" href="#candidate">Candidate<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#you">Your<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#america">America's<br/>Priorities</a></li>
+			</ul>
+			<div class="tab-content" data-type="Democrat">
+				<div class="tab-pane active" id="candidate">
+					<table width="100%">
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>15</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Foreign Policy</td>
+							<td id="col2"><div id="eq"><span>25</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Energy</td>
+							<td id="col2"><div id="eq"><span>20</span></div></td>
+						</tr>
+					</table>			
+				</div>
+				<div class="tab-pane" id="you">
+					<table width="100%">
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Foreign Policy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Energy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>	
+				</div>
+				<div class="tab-pane" id="america">
+					<table width="100%">
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Foreign Policy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Energy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+<!-- candidate3 popover -->
+		<div id="p3Content" style="display: none;">
+			<ul class="nav nav-tabs" data-tabs="tabs" data-type="Republican">
+				<li class="active" id="first"><a data-toggle="tab" href="#candidate">Candidate<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#you">Your<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#america">America's<br/>Priorities</a></li>
+			</ul>
+			<div class="tab-content" data-type="Republican">
+				<div class="tab-pane active" id="candidate">
+					<table width="100%">
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>75</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Budget</td>
+							<td id="col2"><div id="eq"><span>73</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Taxes</td>
+							<td id="col2"><div id="eq"><span>70</span></div></td>
+						</tr>
+					</table>			
+				</div>
+				<div class="tab-pane" id="you">
+					<table width="100%">
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Budget</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Taxes</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>	
+				</div>
+				<div class="tab-pane" id="america">
+					<table width="100%">
+						<tr>
+							<td id="col1">Jobs and the Economy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Budget</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Taxes</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+<!-- candidate4 popover -->
+		<div id="p4Content" style="display: none;">		
+			<ul class="nav nav-tabs" data-tabs="tabs" data-type="Green Tea">
+				<li class="active" id="first"><a data-toggle="tab" href="#candidate">Candidate<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#you">Your<br/>Priorities</a></li>
+				<li><a data-toggle="tab" href="#america">America's<br/>Priorities</a></li>
+			</ul>
+			<div class="tab-content" data-type="Green Tea">
+				<div class="tab-pane active" id="candidate">
+					<table width="100%">
+						<tr>
+							<td id="col1">Abortion</td>
+							<td id="col2"><div id="eq"><span>29</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Education</td>
+							<td id="col2"><div id="eq"><span>28</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Energy</td>
+							<td id="col2"><div id="eq"><span>30</span></div></td>
+						</tr>
+					</table>			
+				</div>
+				<div class="tab-pane" id="you">
+					<table width="100%">
+						<tr>
+							<td id="col1">Abortion</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Education</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Energy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>	
+				</div>
+				<div class="tab-pane" id="america">
+					<table width="100%">
+						<tr>
+							<td id="col1">Abortion</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Education</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+						<tr>
+							<td id="col1">Energy</td>
+							<td id="col2"><div id="eq"><span>50</span></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+			
+
+			
+			<div id="footer">
+				Crowdpac Deliverable <b>|</b> Amber Wong, 7/1/14 - Present
+			</div>
+		</div> <!-- end of container -->
+	</body>
+</html>
